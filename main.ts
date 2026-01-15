@@ -32,7 +32,7 @@ let mySprite = sprites.create(img`
     ........c333bb333cbbfff.........
     ........c33cc33cc3fff...........
     `, SpriteKind.Player)
-mySprite = sprites.create(img`
+let mySprite2 = sprites.create(img`
     . . . . . . . . . . . c c . . . 
     . . . . . . . c c c c 6 3 c . . 
     . . . . . . c 6 3 3 3 3 6 c . . 
@@ -50,8 +50,8 @@ mySprite = sprites.create(img`
     c 5 5 5 5 c 5 5 5 5 c 4 c 5 c . 
     . c c c c c c c c c . . c c c . 
     `, SpriteKind.Player)
-controller.player1.moveSprite(mySprite)
-controller.player2.moveSprite(mySprite)
+controller.moveSprite(mySprite)
+controller.player2.moveSprite(mySprite2)
 scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
