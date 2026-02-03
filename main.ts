@@ -87,6 +87,7 @@ let FAAH = sprites.create(img`
     . . . . . . . . f f f f f f . . 
     `, SpriteKind.Player)
 controller.moveSprite(pigon)
+music.play(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
 controller.player2.moveSprite(snel)
 controller.player3.moveSprite(birh)
 controller.player4.moveSprite(FAAH)
