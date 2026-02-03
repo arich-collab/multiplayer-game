@@ -1,4 +1,14 @@
-let pigon = sprites.create(img`
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    pigon.setPosition(51, 53)
+    snel.setPosition(70, 90)
+    birh.setPosition(97, 61)
+    FAAH.setPosition(105, 20)
+})
+let FAAH: Sprite = null
+let birh: Sprite = null
+let snel: Sprite = null
+let pigon: Sprite = null
+pigon = sprites.create(img`
     ................................
     ................................
     ................................
@@ -32,7 +42,7 @@ let pigon = sprites.create(img`
     ........c333bb333cbbfff.........
     ........c33cc33cc3fff...........
     `, SpriteKind.Player)
-let snel = sprites.create(img`
+snel = sprites.create(img`
     . . . . . . . . . . . c c . . . 
     . . . . . . . c c c c 6 3 c . . 
     . . . . . . c 6 3 3 3 3 6 c . . 
@@ -50,7 +60,7 @@ let snel = sprites.create(img`
     c 5 5 5 5 c 5 5 5 5 c 4 c 5 c . 
     . c c c c c c c c c . . c c c . 
     `, SpriteKind.Player)
-let birh = sprites.create(img`
+birh = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . b 5 5 b . . . 
@@ -68,7 +78,7 @@ let birh = sprites.create(img`
     . . c b d d d d d 5 5 5 b b . . 
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
-let FAAH = sprites.create(img`
+FAAH = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . c c c c c . . . 
     . . . . . . c c 5 5 5 5 5 c . . 
@@ -217,7 +227,3 @@ pigon.setStayInScreen(true)
 snel.setStayInScreen(true)
 birh.setStayInScreen(true)
 FAAH.setStayInScreen(true)
-pigon.setPosition(51, 53)
-snel.setPosition(70, 90)
-birh.setPosition(97, 61)
-FAAH.setPosition(105, 20)
