@@ -1,6 +1,3 @@
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-	
-})
 let pigon = sprites.create(img`
     ................................
     ................................
@@ -223,3 +220,4 @@ FAAH.setStayInScreen(true)
 pigon.setPosition(51, 53)
 snel.setPosition(70, 90)
 birh.setPosition(97, 61)
+FAAH.setPosition(105, 20)
